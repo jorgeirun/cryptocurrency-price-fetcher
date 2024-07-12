@@ -32,6 +32,7 @@ Run the script and input the ticker symbol of the cryptocurrency you want to fet
 ```python fetch_price.py```
 
 ```>>> Please enter coin ticker: BTC```
+
 ```>>> BTC price is 123,456.78 USD```
 
 - Code Explanation
