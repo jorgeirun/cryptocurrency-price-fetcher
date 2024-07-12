@@ -13,16 +13,19 @@ This Python script fetches the USD price of a cryptocurrency based on its ticker
 
 ```sh
 git clone https://github.com/jorgeirun/cryptocurrency-price-fetcher.git
+```
 
 2.	Navigate to the project directory:
 
 cd cryptocurrency-price-fetcher
 
+
 3.	Install the required dependencies:
 
 pip install requests
 
-Usage
+
+## Usage
 
 Run the script and input the ticker symbol of the cryptocurrency you want to fetch the price for:
 
@@ -31,7 +34,7 @@ python fetch_price.py
 >> Please enter coin ticker: BTC
 >> BTC price is 123,456.78 USD
 
-Code Explanation
+- Code Explanation
 
 The script defines a function fetch_price(ticker) that:
 
@@ -41,7 +44,7 @@ The script defines a function fetch_price(ticker) that:
 	4.	Returns the ticker symbol and its USD price if found, or None if not found.
 
 
-Error Handling
+- Error Handling
 
 The function handles various exceptions to ensure robustness:
 
@@ -50,7 +53,8 @@ The function handles various exceptions to ensure robustness:
 	•	ConnectionError, Timeout, TooManyRedirects: If an error occurs during the HTTP request.
 	•	A generic exception handler to catch any unexpected errors.
 
-License
+
+- License
 
 This project is licensed under the MIT License.
 
