@@ -17,22 +17,22 @@ git clone https://github.com/jorgeirun/cryptocurrency-price-fetcher.git
 
 2.	Navigate to the project directory:
 
-cd cryptocurrency-price-fetcher
+```cd cryptocurrency-price-fetcher```
 
 
 3.	Install the required dependencies:
 
-pip install requests
+```pip install requests```
 
 
 ## Usage
 
 Run the script and input the ticker symbol of the cryptocurrency you want to fetch the price for:
 
-python fetch_price.py
+```python fetch_price.py```
 
->> Please enter coin ticker: BTC
->> BTC price is 123,456.78 USD
+```>>> Please enter coin ticker: BTC```
+```>>> BTC price is 123,456.78 USD```
 
 - Code Explanation
 
