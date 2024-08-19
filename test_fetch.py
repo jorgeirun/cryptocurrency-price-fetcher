@@ -1,7 +1,6 @@
 from unittest.mock import patch, Mock
 from requests import Session
 from fetch_price import fetch_price_with_ticker
-import pytest
 
 
 @patch.object(Session, 'get')
