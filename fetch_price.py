@@ -1,6 +1,7 @@
 from requests import Session, ConnectionError, Timeout, TooManyRedirects
 
-def fetch_price(ticker):
+def fetch_price_with_ticker(ticker: str) -> list[str, float]:
+    # return ['lol', 10000.00]
     """
     Fetches the USD price of a cryptocurrency based on its ticker symbol.
 
@@ -36,9 +37,13 @@ def fetch_price(ticker):
     else:
         return None
 
-ticker = input("Please enter coin ticker: ")
-result = fetch_price(ticker)
-if result:
-    print(f"{result[0]} price is {result[1]:,.2f} USD.")
-else:
-    print(f"Symbol '{ticker}' not found.")
+
+if __name__ == "__main__":
+    ticker = input("Please enter coin ticker: ")
+    if ticker == '' or ticker == None:
+        ticker = 'btc'
+    result = fetch_price_with_ticker(ticker)
+    if result:
+        print(f"{result[0]} price is {result[1]:,.2f} USD.")
+    else:
+        print(f"Symbol '{ticker}' not found.")
