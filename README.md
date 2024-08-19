@@ -57,15 +57,15 @@ The function handles various exceptions to ensure robustness:
 
 ## Tests
 
-## Testing the `fetch_price_with_ticker` Function
+-  Testing the `fetch_price_with_ticker` Function
 
 This project includes both unit tests and integration tests for the `fetch_price_with_ticker` function.
 
-### Unit Tests
+- Unit Tests
 
 Unit tests are located in the `test_fetch.py` file and utilize mocking to simulate API responses without making actual HTTP requests. This allows for testing various scenarios, including successful fetches, missing symbols, and incomplete data.
 
-#### How to Run Unit Tests
+- How to Run Unit Tests
 
 To run the unit tests, use the following command:
 
@@ -74,11 +74,11 @@ pytest test_fetch.py
 ```
 
 
-### Integration Tests
+- Integration Tests
 
 Integration tests are located in the test_integration.py file and involve making real HTTP requests to the external API. These tests verify that the API integration works as expected in a real-world scenario.
 
-#### How to Run Integration Tests
+- How to Run Integration Tests
 
 To run the integration tests, use the following command:
 
@@ -93,7 +93,10 @@ Note: Integration tests rely on external API availability and may be affected by
 
 
 
-- License
+
+
+
+## License
 
 This project is licensed under the MIT License.
 
